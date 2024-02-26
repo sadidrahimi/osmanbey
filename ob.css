@@ -1,0 +1,76 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Container styles */
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Header styles */
+  .banner {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .banner a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  /* Product styles */
+  .product {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .product img {
+    max-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .product:nth-child(even) .product img {
+    order: -1; /* Reorder image to the left for even indexed products */
+  }
+  
+  /* Gallery styles */
+  .gallery-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
